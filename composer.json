@@ -1,0 +1,15 @@
+{
+    "name": "stee1cat/cracking-the-coding-interview",
+    "license": "UNLICENSED",
+    "authors": [
+        {
+            "name": "Gennadiy Khatuntsev",
+            "email": "e.steelcat@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "codeception/codeception": "^2.3",
+        "codeception/specify": "^1.0"
+    }
+}
