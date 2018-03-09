@@ -27,4 +27,12 @@ class Chapter01Test extends Unit {
         $this->assertEquals('Mr.%20John%20Smith', ex3('Mr. John Smith'));
     }
 
+    public function testEx4() {
+        $this->assertEquals(true, ex4('Tact Coa'));
+        $this->assertEquals(true, ex4('Toact Ca'));
+        $this->assertEquals(false, ex4('Toect Ca'));
+        $this->assertEquals(true, ex4('Tact  Coa'));
+        $this->assertEquals(true, ex4('dom mdo'));
+    }
+
 }
