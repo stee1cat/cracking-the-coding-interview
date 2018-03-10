@@ -3,11 +3,16 @@
  * Copyright (c) 2018 Gennadiy Khatuntsev <e.steelcat@gmail.com>
  */
 
-$files = [
-    'chapter01.php',
+$folders = [
+    'chapter01',
 ];
 $baseDir = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'src';
 
-foreach ($files as $file) {
-    require_once $baseDir . DIRECTORY_SEPARATOR . $file;
+foreach ($folders as $folder) {
+    $pattern = $baseDir . DIRECTORY_SEPARATOR . $folder . DIRECTORY_SEPARATOR . '*.php';
+    $files = glob($pattern);
+
+    foreach ($files as $file) {
+        require_once $file;
+    }
 }
