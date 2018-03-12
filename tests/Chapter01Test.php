@@ -35,4 +35,11 @@ class Chapter01Test extends Unit {
         $this->assertEquals(true, ex4('dom mdo'));
     }
 
+    public function testEx5() {
+        $this->assertEquals(true, ex5('pale', 'ple'));
+        $this->assertEquals(true, ex5('pales', 'pale'));
+        $this->assertEquals(true, ex5('pale', 'bale'));
+        $this->assertEquals(false, ex5('pale', 'bake'));
+    }
+
 }
