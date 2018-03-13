@@ -42,4 +42,12 @@ class Chapter01Test extends Unit {
         $this->assertEquals(false, ex5('pale', 'bake'));
     }
 
+    public function testEx6() {
+        $this->assertEquals('a2b1c5a3', ex6('aabcccccaaa'));
+        $this->assertEquals('a', ex6('a'));
+        $this->assertEquals('aa', ex6('aa'));
+        $this->assertEquals('a3', ex6('aaa'));
+        $this->assertEquals('abc', ex6('abc'));
+    }
+
 }
