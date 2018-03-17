@@ -5,6 +5,7 @@
 
 $folders = [
     'chapter01',
+    'chapter02',
 ];
 $baseDir = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'src';
 
