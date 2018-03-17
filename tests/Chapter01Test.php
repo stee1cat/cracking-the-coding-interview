@@ -11,43 +11,43 @@ use Codeception\Test\Unit;
 class Chapter01Test extends Unit {
 
     public function testEx1() {
-        $this->assertEquals(false, ex1('hello'));
-        $this->assertEquals(true, ex1('world'));
+        $this->assertEquals(false, ex1_1('hello'));
+        $this->assertEquals(true, ex1_1('world'));
     }
 
     public function testEx2() {
-        $this->assertEquals(true, ex2('bar', 'arb'));
-        $this->assertEquals(false, ex2('bar', 'bor'));
-        $this->assertEquals(true, ex2('bar', 'bar'));
-        $this->assertEquals(false, ex2('bar', 'baar'));
-        $this->assertEquals(false, ex2('baar', 'bar'));
+        $this->assertEquals(true, ex1_2('bar', 'arb'));
+        $this->assertEquals(false, ex1_2('bar', 'bor'));
+        $this->assertEquals(true, ex1_2('bar', 'bar'));
+        $this->assertEquals(false, ex1_2('bar', 'baar'));
+        $this->assertEquals(false, ex1_2('baar', 'bar'));
     }
 
     public function testEx3() {
-        $this->assertEquals('Mr.%20John%20Smith', ex3('Mr. John Smith'));
+        $this->assertEquals('Mr.%20John%20Smith', ex1_3('Mr. John Smith'));
     }
 
     public function testEx4() {
-        $this->assertEquals(true, ex4('Tact Coa'));
-        $this->assertEquals(true, ex4('Toact Ca'));
-        $this->assertEquals(false, ex4('Toect Ca'));
-        $this->assertEquals(true, ex4('Tact  Coa'));
-        $this->assertEquals(true, ex4('dom mdo'));
+        $this->assertEquals(true, ex1_4('Tact Coa'));
+        $this->assertEquals(true, ex1_4('Toact Ca'));
+        $this->assertEquals(false, ex1_4('Toect Ca'));
+        $this->assertEquals(true, ex1_4('Tact  Coa'));
+        $this->assertEquals(true, ex1_4('dom mdo'));
     }
 
     public function testEx5() {
-        $this->assertEquals(true, ex5('pale', 'ple'));
-        $this->assertEquals(true, ex5('pales', 'pale'));
-        $this->assertEquals(true, ex5('pale', 'bale'));
-        $this->assertEquals(false, ex5('pale', 'bake'));
+        $this->assertEquals(true, ex1_5('pale', 'ple'));
+        $this->assertEquals(true, ex1_5('pales', 'pale'));
+        $this->assertEquals(true, ex1_5('pale', 'bale'));
+        $this->assertEquals(false, ex1_5('pale', 'bake'));
     }
 
     public function testEx6() {
-        $this->assertEquals('a2b1c5a3', ex6('aabcccccaaa'));
-        $this->assertEquals('a', ex6('a'));
-        $this->assertEquals('aa', ex6('aa'));
-        $this->assertEquals('a3', ex6('aaa'));
-        $this->assertEquals('abc', ex6('abc'));
+        $this->assertEquals('a2b1c5a3', ex1_6('aabcccccaaa'));
+        $this->assertEquals('a', ex1_6('a'));
+        $this->assertEquals('aa', ex1_6('aa'));
+        $this->assertEquals('a3', ex1_6('aaa'));
+        $this->assertEquals('abc', ex1_6('abc'));
     }
 
     public function testEx7() {
@@ -63,7 +63,7 @@ class Chapter01Test extends Unit {
             [[33, 34, 35, 36], [21, 22, 23, 24], [9, 10, 11, 12]],
         ];
 
-        $this->assertEquals($output, ex7($input));
+        $this->assertEquals($output, ex1_7($input));
     }
 
 }

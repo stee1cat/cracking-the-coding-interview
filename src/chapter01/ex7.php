@@ -8,7 +8,7 @@
  *
  * @return array
  */
-function ex7(array $input) {
+function ex1_7(array $input) {
     $size = count($input);
 
     if ($size > 0) {

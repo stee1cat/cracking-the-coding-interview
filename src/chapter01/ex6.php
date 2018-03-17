@@ -8,7 +8,7 @@
  *
  * @return string
  */
-function ex6($string) {
+function ex1_6($string) {
     $result = '';
     $length = strlen($string);
 

@@ -8,7 +8,7 @@
  *
  * @return boolean
  */
-function ex4($input) {
+function ex1_4($input) {
     $chars = [];
     $charsLength = 0;
 

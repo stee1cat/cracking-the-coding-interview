@@ -9,7 +9,7 @@
  *
  * @return boolean
  */
-function ex5($string1, $string2) {
+function ex1_5($string1, $string2) {
     if (abs(strlen($string1) - strlen($string2)) <= 1) {
         $length1 = strlen($string1);
         $length2 = strlen($string2);

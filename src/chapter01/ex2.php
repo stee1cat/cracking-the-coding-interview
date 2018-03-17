@@ -9,7 +9,7 @@
  *
  * @return boolean
  */
-function ex2($string1, $string2) {
+function ex1_2($string1, $string2) {
     $result = true;
     $chars1 = [];
 

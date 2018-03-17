@@ -8,7 +8,7 @@
  *
  * @return string
  */
-function ex3($input) {
+function ex1_3($input) {
     $output = '';
     $search = ' ';
     $replace = '%20';

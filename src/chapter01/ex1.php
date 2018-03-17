@@ -8,7 +8,7 @@
  *
  * @return boolean
  */
-function ex1($string) {
+function ex1_1($string) {
     $result = true;
     $chars = [];
 
